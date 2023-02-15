@@ -6,4 +6,7 @@
     .main {
         @apply grid place-content-center w-screen h-screen;
     }
+    .form-input {
+        @apply p-2 border-gray-300 border w-32 outline-none;
+    }
 }
