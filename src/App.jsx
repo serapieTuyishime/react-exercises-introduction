@@ -7,6 +7,7 @@ import Exe4 from "./components/Exe4";
 import Exe5 from "./components/Exe5";
 import Exe7 from "./components/Exe7";
 import Exe8 from "./components/Exe8";
+import Exe9 from "./components/Exe9";
 
 function App() {
     return (
@@ -17,7 +18,8 @@ function App() {
             {/* <Exe4 /> */}
             {/* <Exe5 /> */}
             {/* <Exe7 /> */}
-            <Exe8 />
+            {/* <Exe8 /> */}
+            <Exe9 />
         </div>
     );
 }
