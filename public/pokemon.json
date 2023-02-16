@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Bulbasaur",
+        "type": ["Grass", "Poison"],
+        "hp": 45,
+        "attack": 49,
+        "defense": 49,
+        "special_attack": 65,
+        "special_defense": 65,
+        "speed": 45,
+        "image": "/pokemons/Bulbasaur.png"
+    },
+    {
+        "id": 2,
+        "name": "Ivysaur",
+        "type": ["Grass", "Poison"],
+        "hp": 60,
+        "attack": 62,
+        "defense": 63,
+        "special_attack": 80,
+        "special_defense": 80,
+        "speed": 60,
+        "image": "/pokemons/Ivysaur.png"
+    },
+    {
+        "id": 3,
+        "name": "Venusaur",
+        "type": ["Grass", "Poison"],
+        "hp": 80,
+        "attack": 82,
+        "defense": 83,
+        "special_attack": 100,
+        "special_defense": 100,
+        "speed": 80,
+        "image": "/pokemons/Venusaur.png"
+    },
+    {
+        "id": 4,
+        "name": "Charmander",
+        "type": ["Fire"],
+        "hp": 39,
+        "attack": 52,
+        "defense": 43,
+        "special_attack": 60,
+        "special_defense": 50,
+        "speed": 65,
+        "image": "/pokemons/Charmander.png"
+    },
+    {
+        "id": 5,
+        "name": "Charmeleon",
+        "type": ["Fire"],
+        "hp": 58,
+        "attack": 64,
+        "defense": 58,
+        "special_attack": 80,
+        "special_defense": 65,
+        "speed": 80,
+        "image": "/pokemons/Charmeleon.png"
+    },
+    {
+        "id": 6,
+        "name": "Charizard",
+        "type": ["Fire", "Flying"],
+        "hp": 78,
+        "attack": 84,
+        "defense": 78,
+        "special_attack": 109,
+        "special_defense": 85,
+        "speed": 100,
+        "image": "/pokemons/Charizard.png"
+    }
+]
