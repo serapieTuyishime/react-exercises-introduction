@@ -11,11 +11,12 @@ export default function Card({
         setIsflipped(!isFlipped);
     }
     return (
-        <div className="grid p-2 h-64 w-44 bg-white rounded-md ">
+        <div className="grid h-64 p-2 bg-white rounded-md w-44 ">
             <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
                 <div
-                    className="grid gap-2 h-full w-full"
-                    onClick={() => handleClick()}
+                    className="grid w-full h-full gap-2"
+                    onMouseEnter={() => handleClick()}
+                    onMouseLeave={() => handleClick()}
                 >
                     <img src={image} alt={name} />
                     <label className="font-bold">{name}</label>
@@ -30,7 +31,7 @@ export default function Card({
                     </label>
                 </div>
                 <div
-                    className="grid place-content-center gap-2 h-full w-full bg-gray-200"
+                    className="grid w-full h-full gap-2 bg-gray-200 place-content-center"
                     onClick={() => handleClick()}
                 >
                     <span className="flex gap-2">

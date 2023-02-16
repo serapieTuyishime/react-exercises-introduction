@@ -8,18 +8,31 @@ import Exe5 from "./components/Exe5";
 import Exe7 from "./components/Exe7";
 import Exe8 from "./components/Exe8";
 import Exe9 from "./components/Exe9";
-
+import Navigation from "./components/ui/Navigation";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <App />,
+    },
+    {
+        path: "/click1",
+        element: <Exe2 />,
+    },
+    { path: "/intro", element: <Exe1 /> },
+    { path: "/click1", element: <Exe2 /> },
+    { path: "/3clicks", element: <Exe3 /> },
+    { path: "/counter", element: <Exe4 /> },
+    { path: "/mapping", element: <Exe5 /> },
+    { path: "/form", element: <Exe7 /> },
+    { path: "/memes", element: <Exe8 /> },
+    { path: "/flipper", element: <Exe9 /> },
+]);
 function App() {
     return (
-        <div className="App">
-            {/* <Exe1 /> */}
-            {/* <Exe2 /> */}
-            {/* <Exe3 /> */}
-            {/* <Exe4 /> */}
-            {/* <Exe5 /> */}
-            {/* <Exe7 /> */}
-            {/* <Exe8 /> */}
-            <Exe9 />
+        <div className="relative">
+            <Navigation />
+            <RouterProvider router={router} />
         </div>
     );
 }
