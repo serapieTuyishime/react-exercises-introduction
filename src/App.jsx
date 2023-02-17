@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Exe1 from "./components/Exe1";
 import Exe2 from "./components/Exe2";

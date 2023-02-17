@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 export default function Navigation() {
     return (
         <div className="absolute top-0 flex justify-center w-screen gap-2 py-4">

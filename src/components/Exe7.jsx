@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 export default function Exe7() {
     const [firstName, setFirstName] = useState("");
     const [lastname, setLastName] = useState("");
