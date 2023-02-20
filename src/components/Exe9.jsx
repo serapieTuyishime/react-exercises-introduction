@@ -5,7 +5,7 @@ export default function Exe9() {
     const [allPokemons, setAllPokemons] = useState([]);
     const [unchangedPokemons, setUnchangedPokemons] = useState([]);
     useEffect(() => {
-        fetch("./pokemon.json")
+        fetch("https://random-data-api.com/api/users/random_user?size=10")
             .then((res) => {
                 return res.json();
             })
@@ -37,22 +37,22 @@ export default function Exe9() {
     return (
         <div className="main bg-lime-200">
             <button
-                className="bg-red-600 px-4 py-2 max-w-max text-white text-2xl font-bold uppercase mx-auto"
+                className="px-4 py-2 mx-auto text-2xl font-bold text-white uppercase bg-red-600 max-w-max"
                 onClick={() => {
                     shuffleCards();
                 }}
             >
                 Shuffle cards
             </button>
-            <div className="grid-cols-3 grid gap-3 p-3 mx-auto">
+            <div className="grid grid-cols-5 gap-3 p-3 mx-auto">
                 {allPokemons.map((el, index) => {
                     return (
                         <Card
                             key={index}
-                            type={el.type}
-                            name={el.name}
-                            image={el.image}
-                            otherSpecs={el}
+                            username={el.username}
+                            name={el.first_name}
+                            image={el.avatar}
+                            address={el.address}
                         />
                     );
                 })}
