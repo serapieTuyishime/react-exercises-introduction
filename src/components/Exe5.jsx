@@ -1,20 +1,20 @@
 import Navigation from "./ui/Navigation";
 
-const animals = [
-    ["🐶", "dog"],
-    ["🐱", "cat"],
-    ["🐔", "chicken"],
-    ["🐮", "cow"],
-    ["🐑", "sheep"],
-    ["🐴", "horse"],
-];
+// const animals = [
+//     ["🐶", "dog"],
+//     ["🐱", "cat"],
+//     ["🐔", "chicken"],
+//     ["🐮", "cow"],
+//     ["🐑", "sheep"],
+//     ["🐴", "horse"],
+// ];
 
 export default function Exe5() {
     return (
         <>
             <Navigation />
 
-            <div className="main">
+            {/* <div className="main">
                 <div className="grid w-32">
                     {animals.map((el, index) => {
                         return (
@@ -28,7 +28,7 @@ export default function Exe5() {
                         );
                     })}
                 </div>
-            </div>
+            </div> */}
         </>
     );
 }

@@ -5,7 +5,7 @@ export default function Exe3() {
         <>
             <Navigation />
 
-            <div className="main">
+            {/* <div className="main">
                 <div className="flex gap-2">
                     <button
                         className="px-6 py-2 bg-gray-200 border border-black rounded "
@@ -26,7 +26,7 @@ export default function Exe3() {
                         Button 3
                     </button>
                 </div>
-            </div>
+            </div> */}
         </>
     );
 }

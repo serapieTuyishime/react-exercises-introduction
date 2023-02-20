@@ -4,9 +4,9 @@ export default function Exe1() {
         <>
             <Navigation />
 
-            <div className="grid h-screen bg-yellow-600 w-scr place-content-center">
+            {/* <div className="grid h-screen bg-yellow-600 w-scr place-content-center">
                 hello world
-            </div>
+            </div> */}
         </>
     );
 }

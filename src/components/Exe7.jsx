@@ -1,14 +1,14 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Navigation from "./ui/Navigation";
 
 export default function Exe7() {
-    const [firstName, setFirstName] = useState("");
-    const [lastname, setLastName] = useState("");
+    // const [firstName, setFirstName] = useState("");
+    // const [lastname, setLastName] = useState("");
     return (
         <>
             <Navigation />
 
-            <div className="main">
+            {/* <div className="main">
                 <form className="grid gap-4">
                     <input
                         className="form-input"
@@ -33,7 +33,7 @@ export default function Exe7() {
                         Greet me
                     </button>
                 </form>
-            </div>
+            </div> */}
         </>
     );
 }
