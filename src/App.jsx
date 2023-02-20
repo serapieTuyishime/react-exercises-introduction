@@ -14,10 +14,6 @@ const router = createBrowserRouter([
         path: "/",
         element: <Exe1 />,
     },
-    {
-        path: "/click1",
-        element: <Exe2 />,
-    },
     { path: "/intro", element: <Exe1 /> },
     { path: "/click1", element: <Exe2 /> },
     { path: "/3clicks", element: <Exe3 /> },
