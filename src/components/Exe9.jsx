@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import Navigation from "./ui/Navigation";
+
 import Card from "./ui/Card";
 
 export default function Exe9() {
@@ -35,28 +37,32 @@ export default function Exe9() {
         setAllPokemons(shuffled);
     }
     return (
-        <div className="main bg-lime-200">
-            <button
-                className="bg-red-600 px-4 py-2 max-w-max text-white text-2xl font-bold uppercase mx-auto"
-                onClick={() => {
-                    shuffleCards();
-                }}
-            >
-                Shuffle cards
-            </button>
-            <div className="grid-cols-3 grid gap-3 p-3 mx-auto">
-                {allPokemons.map((el, index) => {
-                    return (
-                        <Card
-                            key={index}
-                            type={el.type}
-                            name={el.name}
-                            image={el.image}
-                            otherSpecs={el}
-                        />
-                    );
-                })}
+        <>
+            <Navigation />
+
+            <div className="main bg-lime-200">
+                <button
+                    className="px-4 py-2 mx-auto text-2xl font-bold text-white uppercase bg-red-600 max-w-max"
+                    onClick={() => {
+                        shuffleCards();
+                    }}
+                >
+                    Shuffle cards
+                </button>
+                <div className="grid grid-cols-3 gap-3 p-3 mx-auto">
+                    {allPokemons.map((el, index) => {
+                        return (
+                            <Card
+                                key={index}
+                                type={el.type}
+                                name={el.name}
+                                image={el.image}
+                                otherSpecs={el}
+                            />
+                        );
+                    })}
+                </div>
             </div>
-        </div>
+        </>
     );
 }

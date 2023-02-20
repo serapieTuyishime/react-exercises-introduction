@@ -1,10 +1,12 @@
+import Navigation from "./ui/Navigation";
 export default function Exe1() {
     return (
-        <div
-            className="bg-yellow-600 h-screen w-scr
-    grid place-content-center"
-        >
-            hello world
-        </div>
+        <>
+            <Navigation />
+
+            <div className="grid h-screen bg-yellow-600 w-scr place-content-center">
+                hello world
+            </div>
+        </>
     );
 }
