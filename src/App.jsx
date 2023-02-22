@@ -1,10 +1,10 @@
-import Exe8 from "./components/Exe8";
 import "./App.css";
+import RenderingJSON from "./components/RenderingJSON";
 
 function App() {
     return (
         <div className="App">
-            <Exe8 />
+            <RenderingJSON />
         </div>
     );
 }

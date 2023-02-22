@@ -1,6 +1,6 @@
 import Meme from "./ui/Meme";
 import { useEffect, useState } from "react";
-export default function Exe8() {
+export default function RenderingJSON() {
     const [memes, setMemes] = useState([]);
     useEffect(() => {
         fetch("./memes.json")
