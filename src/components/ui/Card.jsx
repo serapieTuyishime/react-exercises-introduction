@@ -9,14 +9,15 @@ export default function Card({
     const [isFlipped, setIsflipped] = useState(false);
     function handleFlip() {
         setIsflipped((isFlipped) => !isFlipped);
+        console.log("flipped");
     }
     return (
         <div className="grid w-48 h-64 p-2 bg-white rounded-md">
             <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
                 <div
                     className="grid w-full h-full gap-2"
-                    onMouseEnter={() => handleFlip()}
-                    onMouseLeave={() => handleFlip()}
+                    onMouseEnter={handleFlip}
+                    onMouseLeave={handleFlip}
                 >
                     <img src={image} alt={name} />
                     <label className="font-bold">{name}</label>
@@ -24,8 +25,8 @@ export default function Card({
                 </div>
                 <div
                     className="grid w-full h-full gap-2 bg-gray-200 place-content-center"
-                    onMouseEnter={() => handleFlip()}
-                    onMouseLeave={() => handleFlip()}
+                    onMouseEnter={handleFlip}
+                    onMouseLeave={handleFlip}
                 >
                     <span>{address.city}</span>
 

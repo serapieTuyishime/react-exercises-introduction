@@ -6,9 +6,7 @@ export default function Exe9() {
     const [unchangedPokemons, setUnchangedPokemons] = useState([]);
     useEffect(() => {
         fetch("https://random-data-api.com/api/users/random_user?size=10")
-            .then((res) => {
-                return res.json();
-            })
+            .then((res) => res.json())
             .then((data) => {
                 setAllPokemons(data);
                 setUnchangedPokemons(data);
@@ -35,12 +33,10 @@ export default function Exe9() {
         setAllPokemons(shuffled);
     }
     return (
-        <div className="main bg-lime-200">
+        <div className="main bg-lime-200 ">
             <button
                 className="px-4 py-2 mx-auto text-2xl font-bold text-white uppercase bg-red-600 max-w-max"
-                onClick={() => {
-                    shuffleCards();
-                }}
+                onClick={shuffleCards}
             >
                 Shuffle cards
             </button>
