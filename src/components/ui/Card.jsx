@@ -9,7 +9,6 @@ export default function Card({
     const [isFlipped, setIsflipped] = useState(false);
     function handleFlip() {
         setIsflipped((isFlipped) => !isFlipped);
-        console.log("flipped");
     }
     return (
         <div className="grid w-48 h-64 p-2 bg-white rounded-md">
