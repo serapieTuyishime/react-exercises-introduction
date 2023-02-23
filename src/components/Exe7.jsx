@@ -1,29 +1,36 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 export default function Exe7() {
-    const [firstName, setFirstName] = useState("");
-    const [lastname, setLastName] = useState("");
+    const [names, setNames] = useState({
+        firstName: "",
+        lastName: "",
+    });
+    function handleNameChange(event) {
+        const { name, value } = event.target;
+        setNames({ ...names, [name]: value });
+    }
     return (
         <div className="main">
             <form className="grid gap-4">
                 <input
                     className="form-input"
-                    value={firstName}
-                    onChange={(event) => {
-                        setFirstName(event.currentTarget.value);
-                    }}
+                    value={names.firstName}
+                    onChange={(event) => handleNameChange(event)}
                     placeholder="First name"
+                    name="firstName"
                 />
                 <input
                     className="form-input"
                     placeholder="Last name"
-                    value={lastname}
-                    onChange={(event) => {
-                        setLastName(event.currentTarget.value);
-                    }}
+                    name="lastName"
+                    value={names.lastName}
+                    onChange={(event) => handleNameChange(event)}
                 />
                 <button
-                    onClick={() => alert(`Hello ${firstName} ${lastname}`)}
-                    className="bg-red-600 px-4 py-2 uppercase"
+                    onClick={(event) => {
+                        event.preventDefault();
+                        alert(`Hello ${names.firstName} ${names.lastName}`);
+                    }}
+                    className="px-4 py-2 uppercase bg-red-600"
                 >
                     Greet me
                 </button>
